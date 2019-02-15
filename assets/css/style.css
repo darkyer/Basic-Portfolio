@@ -1,0 +1,115 @@
+body
+{
+    background-image: url(../images/leaves.png);
+    margin:0px;
+    width:100%;
+    height: 100%;
+}
+
+.container
+{
+    margin:auto;
+    max-width: 960px;
+}
+
+.header
+{
+    background-color: white;
+    width:100%;
+    height: 90px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.headerName
+{
+    background-color:#4aaaa5;
+    display: inline-block;
+    margin-top:30px;
+    color:white;
+    width:23%;
+    min-width: 180px;
+    height: 60px;
+    text-align: center;
+}
+
+.headerMenu
+{
+    width:30%;
+    display: inline-block;
+    margin-left: 40%;
+}
+
+.headerMenu ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.headerMenu li 
+{
+    float:left;
+}
+
+.headerMenu li a 
+{
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-weight: 300px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.headerMenu ul li {
+    border-left: 1px solid #000;
+}
+
+.headerMenu ul li:first-of-type {
+    border-left: 0px;
+}
+
+.headerName h1
+{
+    margin: 0px;
+    margin-top: 18px;
+    font-size: 24px;
+}
+
+.content
+{
+    margin-top:30px;
+    margin-bottom: 30px;
+}
+
+.content_container
+{
+    margin:auto;
+    max-width: 960px;
+    background-color: gray;
+    min-height: 300px;
+    max-height: 400px;
+
+}
+
+.footer
+{
+    margin-top:30px;
+    background-color: gray;
+    color:lightgray;
+    height: 100%;
+    min-height: 120px;
+    box-shadow: 0 50vh 0 50vh gray;
+}
+
+
+
+.footer_container
+{
+    margin:auto;
+    max-width: 960px;
+}
+
+.footer_container p
+{
+    text-align: center;
+}
