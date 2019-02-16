@@ -169,6 +169,7 @@ input
     margin: 8px 0;
     box-sizing: border-box;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color:gray;
 }
 
 label {
@@ -196,4 +197,5 @@ textarea
     border: 2px solid lightgray;
     border-radius: 4px;
     resize: none;
+    color:gray;
 }
