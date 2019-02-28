@@ -16,8 +16,8 @@ body
     background-image: url(../images/leaves.png);
     margin:0px;
     width:100%;
-    /* display: flex;
-    flex-direction: column; */
+    display: flex;
+    flex-direction: column;
 }
 
 .container
@@ -51,13 +51,13 @@ body
 {
     margin: 0px;
     margin-top: 18px;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 
 .headerMenu
 {
-    width:30%;
+    /* width:30%; */
     display: inline-block;
     margin-left: 40%;
 }
@@ -97,7 +97,7 @@ body
 {
     margin-top:30px;
     margin-bottom: 30px;
-    /* flex: 1 0 auto; */
+    flex: 1 0 auto;
 }
 
 .content_container
@@ -154,7 +154,6 @@ hr
 .portfolio_element
 {
     width: 30%;
-    min-width: 30%;
     display: inline-block;
     margin:5px;
     position: relative;
@@ -183,12 +182,13 @@ hr
 
 .footer
 {
-    margin-top:30px;
+    /* margin-top:30px; */
     background-color: #666666;
     color:lightgray;
     min-height: 120px;
+
     border-top: 10px solid #cccccc;
-    /* flex-shrink: 0; */
+    flex-shrink: 0;
 }
 
 
@@ -244,6 +244,44 @@ textarea
     color:gray;
 }
 
+@media only screen and (max-width: 996px)  
+{
+    .content_container
+    {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+
+}
+
+@media only screen and (max-width: 768px)  
+{
+    .headerName {
+        width:30%;
+        float:left;
+    }
+
+    .headerMenu {
+        width: 70%;
+        float: right;
+        margin-top: 50px;
+        margin-left: 0%;
+    }
+
+    .headerMenu ul{
+        margin-left: 40%;
+    }
+
+    .content_container
+    {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+
+}
+
 @media only screen and (max-width: 640px)  
 {
     .bioImage
@@ -256,12 +294,13 @@ textarea
     .container
     {
         margin:auto;
-        max-width: 600px;
+        /* max-width: 600px; */
     }
 
     .content_container
     {
-        max-width: 600px;
+        width: 90%;
+        margin-left: 5%;
     }
 
     .headerName
@@ -283,15 +322,31 @@ textarea
 
     .header
     {
-        height: 140px;
+        height: 160px;
     }
 
     .headerMenu {
-        width: 30%;
-        display: inline-block;
+        width: 100%;
+        /* display: inline-block; */
+        text-align:center;
+        margin-left: 0;
+        margin-right: 0;
         margin-top:10px;
-        margin-left: 35%;
-        margin-right: 35%;
+        height: 30px;
+    }
+
+    .headerMenu li{
+        float:none;
+        display: inline-block;
+    }
+
+    .headerMenu ul{
+        margin-left: 0%;
+    }
+
+    .portfolio_element
+    {
+        width: 100%;
     }
 
 }
