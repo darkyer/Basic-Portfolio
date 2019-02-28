@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Teko');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono:700');
 
+
+
+
 html, body {
     height: 100%;
+    width:100%;
+    position:relative;
+    display: block;
   }
 
 body
@@ -10,8 +16,8 @@ body
     background-image: url(../images/leaves.png);
     margin:0px;
     width:100%;
-    display: flex;
-  flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
 }
 
 .container
@@ -39,6 +45,13 @@ body
     min-width: 180px;
     height: 60px;
     text-align: center;
+}
+
+.headerName h1
+{
+    margin: 0px;
+    margin-top: 18px;
+    font-size: 24px;
 }
 
 
@@ -78,24 +91,20 @@ body
     border-left: 0px;
 }
 
-.headerName h1
-{
-    margin: 0px;
-    margin-top: 18px;
-    font-size: 24px;
-}
+
 
 .content
 {
     margin-top:30px;
     margin-bottom: 30px;
-    flex: 1 0 auto;
+    /* flex: 1 0 auto; */
 }
 
 .content_container
 {
     margin:auto;
-    width: 960px;
+    /* width: 960px; */
+    max-width: 960px;
     background-color: white;
     min-height: 400px;
     border: 1px solid #dddddd;
@@ -179,7 +188,7 @@ hr
     color:lightgray;
     min-height: 120px;
     border-top: 10px solid #cccccc;
-    flex-shrink: 0;
+    /* flex-shrink: 0; */
 }
 
 
@@ -233,5 +242,57 @@ textarea
     border-radius: 4px;
     resize: none;
     color:gray;
+}
+
+@media only screen and (max-width: 640px)  
+{
+    .bioImage
+    {
+        width: 100% !important;
+        height: 100%;
+        margin-bottom:10px;
+    }
+
+    .container
+    {
+        margin:auto;
+        max-width: 600px;
+    }
+
+    .content_container
+    {
+        max-width: 600px;
+    }
+
+    .headerName
+    {
+        display: inline-block;
+        width:100%;
+        height: 90px;
+        margin-top:0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .headerName h1
+    {
+        margin: 0px;
+        margin-top: 18px;
+        font-size: 30px;
+    }
+
+    .header
+    {
+        height: 140px;
+    }
+
+    .headerMenu {
+        width: 30%;
+        display: inline-block;
+        margin-top:10px;
+        margin-left: 35%;
+        margin-right: 35%;
+    }
+
 }
 
